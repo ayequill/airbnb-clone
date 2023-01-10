@@ -1,0 +1,6 @@
+@include media-lg{
+    .container{
+        // max-width: 1400px;
+        max-width: toRem(1400) !important;
+    }
+}

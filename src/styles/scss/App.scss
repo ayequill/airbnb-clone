@@ -1,0 +1,24 @@
+@import 'card';
+@import 'config';
+@import 'hero';
+@import 'nav';
+@import 'responsiveness';
+
+*,*::before,*::after{
+    margin: 0;
+    box-sizing: 0;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: toRem(600);
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}

@@ -1,0 +1,39 @@
+.sec-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5em;
+    position: relative;
+    img{
+        width: 100%;
+        // z-index: -1;
+    }
+    .card-status{  display: block;
+        font-size: 10.24px;
+        line-height: 110%;
+        position: absolute;
+        // z-index: 1;
+        top: 4%;
+        left: 4%;
+        text-align: center;
+        background: #FFFFFF;
+        border-radius: 2px;
+        padding: 0.5em 1em;
+    }
+    .card-details{
+        display: grid;
+        gap: 0.5em;
+    }
+    p{
+        font-weight: 300;
+        // font-size: toRem(12);
+        font-size: 12px;
+        line-height: 110%;
+    }
+    .rating > span{
+        opacity: 0.5;
+    }
+    .rating i{
+        color: #FE395C;
+    }
+   
+}
