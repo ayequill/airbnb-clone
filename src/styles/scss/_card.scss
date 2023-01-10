@@ -1,31 +1,37 @@
-.sec-2{
+section.sec-2{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3,1fr);
     padding: 0.5em;
+    gap: 0.5em;
+    .card{
     position: relative;
+    }   
     img{
         width: 100%;
-        // z-index: -1;
+        min-height: 166px;
+        object-fit: cover;
+        border-radius: 6px;
     }
-    .card-status{  display: block;
-        font-size: 10.24px;
-        line-height: 110%;
-        position: absolute;
-        // z-index: 1;
-        top: 4%;
-        left: 4%;
-        text-align: center;
-        background: #FFFFFF;
-        border-radius: 2px;
-        padding: 0.5em 1em;
+    .card-img{
+        width: 100%;
     }
     .card-details{
         display: grid;
         gap: 0.5em;
     }
+    .card-status{  
+        font-size: 10.24px;
+        line-height: 110%;
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        text-align: center;
+        background: #FFFFFF;
+        border-radius: 2px;
+        padding: 0.2em .5em;
+    }
     p{
         font-weight: 300;
-        // font-size: toRem(12);
         font-size: 12px;
         line-height: 110%;
     }
@@ -35,5 +41,8 @@
     .rating i{
         color: #FE395C;
     }
+    .title{
+     text-overflow: ellipsis;
+}
    
 }
